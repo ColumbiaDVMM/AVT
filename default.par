@@ -1,0 +1,21 @@
+#Properties for region segmentation and tracking
+
+QUANTIZATION_LEVEL=64
+
+#Color merging threshold measured in L*u*v* space
+#by default thresh is automatically selected
+#COLOR_THRESHOLD=16.0
+
+L_WEIGHT=1.0
+u_WEIGHT=2.0
+v_WEIGHT=2.0
+
+#Gaussian smooth before Canny Edge detection
+GAUSSIAN_SMOOTH=0.8
+
+#minimum size of a segmented region
+MIN_SIZE=30
+
+#second pass region merge of neighboring regions without strong edges
+#this process wil reduce the number of regions, but may be time consuming
+2nd_EDGE_MERGE=N
