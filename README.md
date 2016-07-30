@@ -51,19 +51,19 @@ The system can take both MPEG(1,2) or raw frames as input.
 
 NOTE: for raw frames, current version only accept UNIX version PPM format files. The difference between UNIX and Windows version files lies on the explaination of the carriage-return. In UNIX platform, "carriage-return" will be translated as one ASCII symbol "0X0A". In Windows, instead, two ASCII symbols "0X0D, 0X0A". Please make sure you are providing files with correct format.
 
-----mpeg.cut------
-MPEG                              -> Magic
-/proj/oscar1/VQ/AVT/TMP           -> Output directory
-/proj/oscar1/VQ/AVT/akiyo.mpg     -> MPEG file name
-2                                 -> Number of shots to track
-10 15                             -> first shot, start & end frame
-30 34                             -> second shot, start & end frame
+----mpeg.cut------</br>
+MPEG                              -> Magic</br>
+/proj/oscar1/VQ/AVT/TMP           -> Output directory</br>
+/proj/oscar1/VQ/AVT/akiyo.mpg     -> MPEG file name</br>
+2                                 -> Number of shots to track</br>
+10 15                             -> first shot, start & end frame</br>
+30 34                             -> second shot, start & end frame</br>
 
-----raw.cut------ 
-RAW                                               -> Magic
-2                                                 -> Number of shots to track
-/proj/oscar1/VQ/AVT/TMP/akiyo_10/f%.5d.ppm 10 15  -> first shot directory,start&end frame
-/proj/oscar1/VQ/AVT/TMP/akiyo_30/f%.5d.ppm 30 34  -> first shot directory,start&end frame
+----raw.cut------ </br>
+RAW                                               -> Magic</br>
+2                                                 -> Number of shots to track</br>
+/proj/oscar1/VQ/AVT/TMP/akiyo_10/f%.5d.ppm 10 15  -> first shot directory,start&end frame</br>
+/proj/oscar1/VQ/AVT/TMP/akiyo_30/f%.5d.ppm 30 34  -> first shot directory,start&end frame</br>
 
 
 ####5. Output
